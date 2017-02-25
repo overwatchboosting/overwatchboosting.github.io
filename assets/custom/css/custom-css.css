@@ -20,16 +20,28 @@
   font-style: normal
 }
 
-body {
+.bignoodle {
   font-family: "Big Noodle Titling";
-  background-color: #d0c7dc;
-  color: #405275;
-  padding-top: 45px;
 }
 
-/* body { */
-    /* background-image: url("../media/body-bg2.jpg"); */
-	/* background-repeat: no-repeat; */
-	/* background-attachment: fixed; */
-	/* background-origin:border-box; */
-/* } */
+.futura {
+  font-family: Futura, sans-serif;
+}
+
+body {
+	background-color: #d0c7dc;
+	color: #405275;
+	padding-top: 45px;
+    background-image: url("../../media/body-bg2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-origin:border-box;
+}
+
+.sidebar {
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 10%; // required as well.
+} 
+
+.width-100 { width: 100% !important; }
