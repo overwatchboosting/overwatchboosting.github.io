@@ -57,11 +57,11 @@ h1, h2, h3, h4, h5 {
 	letter-spacing: .02em;
 }
 
-.panel-heading-main {
+.heading-main {
 	background-color: #303c56 !important;
 }
 
-div.panel-heading-main > h1 {
+div.heading-main > h1 {
 	color: #f0edf2;
 }
 

@@ -1,9 +1,10 @@
-var defaultDelay = 500;
+var defaulKeyuptDelay = 500;
+var defaultDelay = 250;
 
 $(document).ready(function() {
 	$('#serviceType').change(function() {delay(function(){calculateForm($("#serviceType").val());}, defaultDelay );});
-	$('#boostStartRank').keyup(function() {delay(function(){calculateForm("boost");}, defaultDelay );});
-	$('#boostEndRank').keyup(function() {delay(function(){calculateForm("boost");}, defaultDelay );});
+	$('#boostStartRank').keyup(function() {delay(function(){calculateForm("boost");}, defaulKeyuptDelay );});
+	$('#boostEndRank').keyup(function() {delay(function(){calculateForm("boost");}, defaulKeyuptDelay );});
 	$('#boostSoloOption').click(function() {delay(function(){calculateForm("boost");}, defaultDelay );});
 	$('#boostGroupOption').click(function() {delay(function(){calculateForm("boost");}, defaultDelay );});
 });
