@@ -15,16 +15,19 @@
 	<link type="text/css" rel="stylesheet" href="assets/bootswatch-3.3.7/bootstrap.css">
 
 	<!-- Bootstrap core JS -->
-	<script type="text/javascript" script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	
+	<!-- bindWIthDelay JS -->
+	<script type="text/javascript" src="assets/bindWithDelay/bindWIthDelay.js"></script>
 	
 	<!-- Custom JS -->
-	<script type="text/javascript" src="assets/custom/js/custom-js.js"></script>
+	
 
 	<!-- Custom CSS -->
 	<link type="text/css" rel="stylesheet" href="assets/custom/css/custom-css.css">
 
 	<!-- Normalize CSS -->
-	<link type="text/css" rel="stylesheet" href="assets/normalize-4.0.0/normalize.css">
+	<link type="text/css" rel="stylesheet" href="assets/normalize-5.0.0/normalize.css">
 </head>
 <body>
 
@@ -182,7 +185,7 @@
 				<div class="panel-body">
 					<h2><i class="fa fa-street-view fa-fw"></i>&nbsp;&nbsp;Placement Matches</h2>
 					<p>ghjhg fghjfg hjf gjfh fghj gfhj gh jghj fghj gh hg i i nkj nkj nkjnkjn kikb hjb kbjkh bkbh kjbkjb kjbnkj bkj bkj nkjn kibkihb khbkj bibgkijdfg sdfg sgh sfh sfghj sfgh sf hg sfg hsfg h</p>
-					<h2><i class="fa fa-arrow-circle-down fa-fw"></i>&nbsp;&nbsp;Deranking</h2>
+					<h2><span class="fa-stack fa-fw"><i class="fa fa-window-minimize fa-stack-1x fa-fw"></i><i class="fa fa-play fa-stack-1x fa-rotate-90 fa-fw"></i></span>&nbsp;&nbsp;<i class="fa fa-caret-square-o-down fa-fw"></i>&nbsp;&nbsp;<i class="fa fa-step-forward fa-rotate-90 fa-fw"></i>&nbsp;&nbsp;<i class="fa fa-arrow-down"></i>&nbsp;&nbsp;<i class="fa fa-arrow-circle-o-down"></i>&nbsp;&nbsp;Deranking</h2>
 					<p>ouyvjlhblj kj kjb;hb i; ;ihbkjbjkbjhbjh bjlhbjlb jhbjhb ju ljhbjkl bjhb kljnblk  ikhjbklb klbn jklbjhbljk bhjbkihbkjhb lbhlhjbl jkbljkbljk hbjhbjh bhj bljhb ljbhljbjl hbljhb jlhb ljhbljh</p>
 				</div>
 			</div>
@@ -194,6 +197,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-4"><!-- Ordering Sidebar -->
 				<div class="panel panel-default">
 					<div class="panel-body">
+					
 						<div class="row">
 							<div class="col-md-4">
 								<span class="text-size-14">Service</span>
@@ -208,13 +212,14 @@
 						</div>
 						
 						<div class="row">
-							<div class="col-md-12">
-								<br />
+							<div class="col-md-12 margin-ver-025">
 							</div>
 						</div>
 					
-						<form id="boostForm" class="form-horizontal hidden"><!-- Boosting Form -->
-							<div class="form-group">
+					
+						<form id="boostForm" class="form-horizontal"><!-- Boosting Form -->
+						
+							<div class="form-group margin-ver-025">
 								<label for="boostStartRank" class="control-label col-md-6">
 									Current SR
 								</label>
@@ -223,7 +228,7 @@
 								</div>
 							</div>
 							
-							<div class="form-group">
+							<div class="form-group margin-ver-025">
 								<label for="boostEndRank" class="control-label col-md-6">
 									Desired SR
 								</label>
@@ -232,7 +237,7 @@
 								</div>
 							</div>
 							
-							<div class="form-group margin-bot-00">
+							<div class="form-group margin-ver-025">
 								<label for="boostSoloOption" class="control-label col-xs-9">
 									<span class="pull-right">Solo Boost&nbsp;<i class="fa fa-user fa-fw"></i></span>
 								</label>
@@ -241,7 +246,7 @@
 								</div>
 							</div>
 							
-							<div class="form-group">
+							<div class="form-group margin-ver-025">
 								<label for="boostGroupOption" class="control-label col-xs-9 margin-top-00">
 									<span class="pull-right">Group Boost&nbsp;<i class="fa fa-users fa-fw"></i></span>
 								</label>
@@ -250,7 +255,7 @@
 								</div>
 							</div>
 							
-							<div class="form-group">
+							<div class="form-group margin-ver-025">
 								<label for="boostPrice" class="control-label col-sm-4">Price</label>
 								<div class="col-md-8">
 									<div class="input-group">
@@ -261,18 +266,18 @@
 							</div>
 						</form>
 						
-						<form id="placementForm" class="form-horizontal"><!-- Placement Form -->
+						<form id="placementForm" class="form-horizontal hidden"><!-- Placement Form -->
 						
-							<div class="form-group ver-align-center-sm">
-								<label for="placementStartRank" class="col-md-6">
-									Last Season Ending SR
+							<div class="form-group margin-ver-025">
+								<label for="placementStartRank" class="control-label col-md-6">
+									Season 3 SR
 								</label>
 								<div class="col-md-6">
 									<input id="placementStartRank" type="text" class="form-control">
 								</div>
 							</div>
 							
-							<div class="form-group">
+							<div class="form-group margin-ver-025">
 								<label for="placementNum" class="control-label col-md-8">
 									# of Placements
 								</label>
@@ -281,7 +286,7 @@
 								</div>
 							</div>
 							
-							<div class="form-group margin-bot-00">
+							<div class="form-group margin-ver-025">
 								<label for="placementSoloOption" class="control-label col-xs-9 padding-hor-00">
 									<span class="pull-right">Solo Games&nbsp;<i class="fa fa-user fa-fw fa-lg"></i>&nbsp;</span>
 								</label>
@@ -290,7 +295,7 @@
 								</div>
 							</div>
 							
-							<div class="form-group">
+							<div class="form-group margin-ver-025">
 								<label for="placementGroupOption" class="control-label col-xs-9 margin-top-00 padding-hor-00">
 									<span class="pull-right">Group Games&nbsp;<i class="fa fa-users fa-fw fa-lg"></i>&nbsp;</span>
 								</label>
@@ -299,11 +304,11 @@
 								</div>
 							</div>
 							
-							<div class="form-group">
+							<div class="form-group margin-ver-025">
 								<label for="placementPrice" class="control-label col-sm-4">Price</label>
 								<div class="col-md-8">
 									<div class="input-group">
-										<span class="input-group-addon bg-info text-info"><i class="fa fa-usd fa-fw"></i></span>
+										<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span>
 										<input id="placementPrice" class="form-control" type="text" value="999.99" readonly>
 									</div>
 								</div>
@@ -361,9 +366,7 @@
 							
 						</form>
 						
-
-						
-						<div class="form-group">
+						<div class="form-group margin-ver-025">
 							<label for="battleTag" class="control-label col-xs-12">
 								Your BattleTag
 							</label>
@@ -391,4 +394,7 @@
   </div><!-- /container -->
 
 </body>
+
+	<script type="text/javascript" src="assets/custom/js/custom-js.js"></script>
+
 </html>
