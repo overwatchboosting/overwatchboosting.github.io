@@ -65,11 +65,11 @@ div.heading-main > h1 {
 	color: #f0edf2;
 }
 
-.panel-heading-sub {
+.heading-sub {
 	background-color: #ff9c00 !important;
 }
 
-div.panel-heading-sub > h3 {
+div.heading-sub > h3 {
 	color: #f0edf2;
 }
 
@@ -78,6 +78,10 @@ div.panel-heading-sub > h3 {
     position: -webkit-sticky;
     position: sticky;
     top: 5%;
+}
+
+.cursor-default {
+	cursor: default;
 }
 
 input[type=radio]
@@ -137,6 +141,15 @@ input[type=radio]
 
 .width-100 { width: 100% !important; }
 
+.text-size-01 { font-size: 0.1em !important; }
+.text-size-02 { font-size: 0.2em !important; }
+.text-size-03 { font-size: 0.3em !important; }
+.text-size-04 { font-size: 0.4em !important; }
+.text-size-05 { font-size: 0.5em !important; }
+.text-size-06 { font-size: 0.6em !important; }
+.text-size-07 { font-size: 0.7em !important; }
+.text-size-08 { font-size: 0.8em !important; }
+.text-size-09 { font-size: 0.9em !important; }
 .text-size-10 { font-size: 1.0em !important; }
 .text-size-11 { font-size: 1.1em !important; }
 .text-size-12 { font-size: 1.2em !important; }

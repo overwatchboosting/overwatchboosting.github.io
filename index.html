@@ -11,6 +11,9 @@
 	<!-- Font Awesome CSS -->
 	<link type="text/css" rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	
+	<!-- Material Design CSS -->
+	<link type="text/css" rel="stylesheet" href="assets/material-design-icons-3.0.1/material-icons.css">
+	
 	<!-- Bootstrap core CSS, Bootswatch theme -->
 	<link type="text/css" rel="stylesheet" href="assets/bootswatch-3.3.7/bootstrap.css">
 
@@ -43,7 +46,7 @@
 	</div>
 	
 	<div class="row text-size-12">
-		<div class="col-lg-9 col-md-8 col-sm-8 text-justify">
+		<div class="col-lg-9 col-md-8 col-sm-8 text-justify"><!-- Primary Content -->
 		
 			<div class="panel panel-default"><!-- Overwatch Competitive Boosting -->
 				<div class="panel-heading heading-main"><h1>Overwatch Competitive Boosting</h1></div>
@@ -58,7 +61,7 @@
 				<div class="panel-heading heading-main"><h1>How it Works</h1></div>
 				<div class="panel-body">
 					<h2><i class="fa fa-user fa-fw"></i>&nbsp;&nbsp;Solo Boosts</h2>
-					<p>Solo boosts are how boosting is traditionally done. A solo boost involves a high skill player playing directly on your account and as a result, costs less than a group boost. For account security, a temporary password should be set on your Battle.net account for the duration of the boost. Additionally, if you have a smart phone, you can enable the <a href=”https://play.google.com/store/apps/details?id=com.blizzard.bma”>Battle.net mobile authenticator</a> for peace of mind.</p>
+					<p>Solo boosts are how boosting is traditionally done. A solo boost involves a high skill player playing directly on your account and as a result, costs less than a group boost. For account security, a temporary password should be set on your Battle.net account for the duration of the boost. Additionally, if you have a smart phone, you can enable the <a href="https://play.google.com/store/apps/details?id=com.blizzard.bma">Battle.net mobile authenticator</a> for peace of mind.</p>
 					<h2><i class="fa fa-users fa-fw"></i>&nbsp;&nbsp;Group Boosts</h2>
 					<p>Group boosts involve you playing on your account alongside our boosters. Our boosters are flexible and will work around your schedule and availability. While the group boost is occurring you may request coaching to help improve your gameplay or to understand the dynamics of the matches you've been playing in.</p>
 				</div>
@@ -110,7 +113,7 @@
 					</a>
 					<div id="faq3" class="panel-collapse collapse">
 						<div class="panel-body">
-							This is a possibility largely dependent on your desired SR. Please get in touch with us using the contact form on the right to discuss this.
+							This is a possibility largely dependent on your desired SR. Please get in touch with us using the contact button on the right to discuss this.
 						</div>
 					</div>
 				</div>
@@ -125,7 +128,7 @@
 					</a>
 					<div id="faq4" class="panel-collapse collapse">
 						<div class="panel-body">
-							While we are willing to provide limited coaching during group boosts, we don't consider this the core service that we are offering. If you are interested in receiving dedicated coaching, we recommend the following discord group that offers volunteer coaching: <a href ="https://discord.gg/VxYhChh">https://discord.gg/VxYhChh</a>.
+							While we are willing to provide limited coaching during group boosts, we don't consider this a core service that we are offering. If you are interested in receiving dedicated coaching, we recommend the following discord group that offers volunteer coaching: <a href ="https://discord.gg/VxYhChh">https://discord.gg/VxYhChh</a>.
 						</div>
 					</div>
 				</div>
@@ -181,17 +184,16 @@
 				<div class="panel-heading heading-main"><h1>Other Services</h1></div>
 				<div class="panel-body">
 					<h2><i class="fa fa-street-view fa-fw"></i>&nbsp;&nbsp;Placement Matches</h2>
-					<p>ghjhg fghjfg hjf gjfh fghj gfhj gh jghj fghj gh hg i i nkj nkj nkjnkjn kikb hjb kbjkh bkbh kjbkjb kjbnkj bkj bkj nkjn kibkihb khbkj bibgkijdfg sdfg sgh sfh sfghj sfgh sf hg sfg hsfg h</p>
-					<h2><i class="fa fa-arrow-down"></i>&nbsp;&nbsp;<i class="fa fa-arrow-circle-o-down"></i>&nbsp;&nbsp;Deranking</h2>
-					<p>ouyvjlhblj kj kjb;hb i; ;ihbkjbjkbjhbjh bjlhbjlb jhbjhb ju ljhbjkl bjhb kljnblk  ikhjbklb klbn jklbjhbljk bhjbkihbkjhb lbhlhjbl jkbljkbljk hbjhbjh bhj bljhb ljbhljbjl hbljhb jlhb ljhbljh</p>
+					<p>Placement matches are available in either a solo or group boost format and are done with a net win system. For example, if you purchase placements with 7 net wins then we will gaurantee 7/10 wins for placements. If for any reason we dont win at least 7/10 games then we will play additional matches after placements until the your number of season wins is at least 7 more than your season losses.</p>
+					<h2><i class="fa fa-arrow-circle-o-down fa-fw"></i>&nbsp;&nbsp;Deranking</h2>
+					<p>We will lower your account rank to a minimum of 700 SR. Deranking takes much longer and is offered at a flat rate. Note that deranking is ONLY done as part of a full six player premade group, we will NEVER throw games with other players in order to derank.</p>
 				</div>
 			</div>
 
 		</div><!-- /column -->
 		
-		<div class="sidebar">
-		
-			<div class="col-lg-3 col-md-4 col-sm-4"><!-- Ordering Sidebar -->
+		<div class="sidebar"><!-- Sidebar -->
+			<div class="col-lg-3 col-md-4 col-sm-4">
 				<div class="panel panel-default">
 					<div class="panel-body">
 					
@@ -207,15 +209,60 @@
 								</select>
 							</div>
 						</div>
-						
-						<div class="row">
-							<div class="col-md-12 margin-ver-025">
+					
+<!--
+						<div id="boostFormTest" class="row hidden">
+							<div class="row">
+								<div class="col-md-6">
+									<strong>Current SR</strong>
+								</div>
+								<div class="col-md-6">
+									<input id="boostStartRank" type="text" class="form-control">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-6">
+									<strong>Desired SR</strong>
+								</div>
+								<div class="col-md-6">
+									<input id="boostEndRank" type="text" class="form-control">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-9">
+									<span class="pull-right"><strong>Solo Boost</strong>&nbsp;<i class="fa fa-user fa-fw"></i></span>
+								</div>
+								<div class="col-xs-3">
+									<input id="boostSoloOption" type="radio" name="boostOptions" checked />
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-9">
+									<span class="pull-right"><strong>Group Boost</strong>&nbsp;<i class="fa fa-users fa-fw"></i></span>
+								</div>
+								<div class="col-xs-3">
+									<input id="boostGroupOption" type="radio" name="boostOptions" />
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-sm-4">
+									<span class="pull-right"><strong>Price</strong></span>
+								</div>
+								<div class="col-sm-8">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-usd fa-fw"></i></span>
+										<input id="boostPrice" class="form-control" type="text" value="" readonly />
+									</div>
+								</div>
 							</div>
 						</div>
-					
-					
-						<form id="boostForm" class="form-horizontal"><!-- Boosting Form -->
+-->
 						
+						<form id="boostForm" class="form-horizontal"><!-- Boosting Form -->
 							<div class="form-group margin-ver-025">
 								<label for="boostStartRank" class="control-label col-md-6">
 									Current SR
@@ -234,22 +281,24 @@
 								</div>
 							</div>
 							
-							<div class="form-group margin-ver-025">
-								<label for="boostSoloOption" class="control-label col-xs-9">
-									<span class="pull-right">Solo Boost&nbsp;<i class="fa fa-user fa-fw"></i></span>
-								</label>
-								<div class="col-xs-3 padding-hor-00">
-									<input id="boostSoloOption" type="radio" name="boostOptions" checked>
-								</div>
+							<div class="form-group margin-ver-05">
+								<div class="col-xs-12">
+									<div id="boostSoloOption" class="ver-center-parent cursor-default">
+										<i class="material-icons ver-center-child">radio_button_checked</i>&nbsp;
+										<i class="fa fa-user fa-fw fa-lg ver-center-child"></i>
+										<span class="ver-center-child"><strong>&nbsp;Solo Boost</strong></span>
+									</div>
+								</div><!-- /column -->
 							</div>
 							
-							<div class="form-group margin-ver-025">
-								<label for="boostGroupOption" class="control-label col-xs-9 margin-top-00">
-									<span class="pull-right">Group Boost&nbsp;<i class="fa fa-users fa-fw"></i></span>
-								</label>
-								<div class="col-xs-3 padding-hor-00">
-									<input id="boostGroupOption" type="radio" name="boostOptions">
-								</div>
+							<div class="form-group margin-ver-05">
+								<div class="col-xs-12">
+									<div id="boostGroupOption" class="ver-center-parent cursor-default">
+										<i class="material-icons ver-center-child">radio_button_unchecked</i>&nbsp;
+										<i class="fa fa-users fa-fw fa-lg ver-center-child"></i>
+										<span class="ver-center-child"><strong>&nbsp;Group Boost</strong></span>
+									</div>
+								</div><!-- /column -->
 							</div>
 							
 							<div class="form-group margin-ver-025">
@@ -363,27 +412,47 @@
 							
 						</form>
 						
-						<div class="form-group margin-ver-025">
-							<label for="battleTag" class="control-label col-xs-12">
-								Your BattleTag
-							</label>
+						<div class="row">
 							<div class="col-xs-12">
-								<input id="battleTag" type="text" class="form-control">
+								<strong>Your BattleTag</strong>
+							</div>
+							<div class="col-xs-12">
+								<input id="battleTag" type="text" class="form-control" />
 							</div>
 						</div>
 						
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reviewModal">
-Review Order
-</button>
+						<div class="row margin-ver-025">
+							<div class="col-xs-12">
+								<button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#reviewModal">
+									<i class="fa fa-retweet fa-fw fa-lg"></i>&nbsp;&nbsp;Review Order
+								</button>
+							</div>
+						</div>
 						
 					</div>
 				</div>
 			</div><!-- /column -->
 			
-			<div class="col-lg-3 col-md-4 col-sm-4"><!-- Contact Sidebar -->
+			<div class="col-lg-3 col-sm-4"><!-- Contact Sidebar -->
 				<div class="panel panel-default">
+					<div class="panel-heading"><span class="text-size-12">Questions?</span></div>
 					<div class="panel-body">
-						Contact Us
+						<div class="row">
+							<div class="col-xs-12 text-justify">
+								<small>
+									<p>Don't hesitate to talk to us!</p>
+									
+									<p>Discord (preferred), email, and text:</p>
+								</small>
+							</div>
+						</div>
+						<div class="row text-size-11">
+							<div class="col-xs-12">
+								<button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#contactModal">
+									<i class="fa fa-user-circle-o fa-fw fa-lg"></i>&nbsp;&nbsp;Contact Us
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div><!-- /column -->
@@ -394,8 +463,7 @@ Review Order
 
   </div><!-- /container -->
   
-  <!-- Modal -->
-  <div id="reviewModal" class="modal fade">
+  <div id="reviewModal" class="modal fade"><!-- Order Review Modal -->
 	<div class="modal-dialog" style="width: 40%;">
 		<div class="modal-content">
 			
@@ -413,9 +481,31 @@ Review Order
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			</div>
 		
-		</div><!-- End of modal content -->
-	</div><!-- End of modal dialogue -->
-  </div><!-- End of modal -->
+		</div><!-- /modal-content -->
+	</div><!-- /modal-dialogue -->
+  </div><!-- /reviewModal -->
+  
+  <div id="contactModal" class="modal fade"><!-- Contact Us Modal -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			
+			<div class="modal-header heading-main">
+				<button type="button" class="close" data-dismiss="modal"><span class="text-size-15">&times;</span></button>
+				<h1>Contact Us</h1>
+			</div>
+			
+			<div class="modal-body">
+			
+				
+			</div><!-- End of modal body -->
+		
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		
+		</div><!-- /modal-content -->
+	</div><!-- /modal-dialogue -->
+  </div><!-- /contactModal -->
 
 </body>
 
